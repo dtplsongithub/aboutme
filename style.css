@@ -71,6 +71,11 @@ small {
   text-align: center;
 }
 
+.timelinecontainer img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
   background: #ffffff33;
   border-top: 3px solid white;

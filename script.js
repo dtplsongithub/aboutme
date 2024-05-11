@@ -23,7 +23,7 @@ for (let i in buttons) {
     document.getElementById("-1m").style.display = "none";
     for (let j in document.getElementsByClassName("main")[0].childNodes) {
       if (document.getElementsByClassName("main")[0].childNodes[j].nodeName == "DIV") {
-        if (document.getElementsByClassName("main")[0].childNodes[j].id == buttons[i].id) {
+        if (document.getElementsByClassName("main")[0].childNodes[j].id == buttons[i].id+"m") {
           document.getElementsByClassName("main")[0].childNodes[j].style.display = "block";
         } else {
           document.getElementsByClassName("main")[0].childNodes[j].style.display = "none";
