@@ -66,16 +66,46 @@ let splashes = [
   "I REMBER",
   "hey do you guys have any good splashes",
   "splish splash splosh",
-  "привет",
   "no",
-  "да я сейчас могу говорить по-русски, но я ещё учусь.",
   "⚠️ Expected color but found 'null'.",
   "da pot să vorbesc și română, evident",
   "i cost a hydrant",
-  "yes this website DID get recently remade"
+  "do try this at home!",
+  "get out",
+  "WELCOME TO THE BIG 2025!!!1!1!",
+  "yes?",
+  "this website was originally made in a website. crazy isnt it?",
+  "my screen is flickering when i use visual studio code can someone help",
+  "This website glows in the dark!",
+  "some jokes are stolen from orteil, but thats just because i have been playing a lot of cookie clicker lately.",
+  "oh thanks for reading this i guess",
+  "WHO ARE YOU WHY ARE YOU HERE",
+  "this website is very poorly made, dont trust me? try opening it in mobile!",
+  "500 cigarettes",
+  "don't you have something better to do?",
+  "bababababababababababababa",
+  "",
+  "click this to breathe",
+  "do NOT click this under any circumstances.",
+  "i forgot what happens when you do click the splash tho",
+  "fier",
+  "you know what else is massi- wait no get out of my head",
+  "sorry for some of the splashes",
+  "no way for me to fix that",
+  "d",
+  "did you get the empty splash yet?",
+  "lol im on the left                                                                 ",
+  "                                                                 lol im on the right",
+  "lol i am centered",
+  "the quick brown fox jumps over the lazy dog",
+  "MS Gothic is the best font, change my mind.",
+  "SHUT UP \"DUBMOOD - YOU CAN DO IT (BUT NOT LIKE WE DO IT)\" IS PLAYING",
+  "THIS TUNE IS FUCKING",
+  "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+  "pma pma pma pma tou pma pma tei pma pma pma pma tou pma tee toww pam t'r'r'r pma pma tou pma pma tei tch papa tch pe pe tch papa pa pepepepe pepe pe"
 ];
 splashes.push(`there are currently a total of ${splashes.length+2} splashes`);
-splashes.push(`there is a ${(100/(splashes.length+1)).toFixed(2)}% chance of you getting this splash. consider yourself lucky!`);
+splashes.push(`there is a ${(100/(splashes.length+1)).toFixed(2)}% chance of you getting this splash. consider yourself lucky! or not, i dont know.`);
 let randomSplash = splashes[Math.floor(Math.random()*(splashes.length))];
 
 var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
