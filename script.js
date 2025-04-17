@@ -102,7 +102,15 @@ let splashes = [
   "SHUT UP \"DUBMOOD - YOU CAN DO IT (BUT NOT LIKE WE DO IT)\" IS PLAYING",
   "THIS TUNE IS FUCKING",
   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-  "pma pma pma pma tou pma pma tei pma pma pma pma tou pma tee toww pam t'r'r'r pma pma tou pma pma tei tch papa tch pe pe tch papa pa pepepepe pepe pe"
+  "pma pma pma pma tou pma pma tei pma pma pma pma tou pma tee toww pam t'r'r'r pma pma tou pma pma tei tch papa tch pe pe tch papa pa pepepepe pepe pe",
+  "324342342342343243tegergergwerherhherhehhtrknhttrnrtlnrgnlrenlrenglnrnlglnergnlernlneveflvdmvfnmv,nvmnvmvfge",
+  "no i dont really feel like it",
+  "yes i really DO feel like it !!!1!!11",
+  "e - the sequel to d",
+  "coming soon to stores near hungary",
+  "i may be able to",
+  "i mayn't be able to",
+  "nibbles"
 ];
 splashes.push(`there are currently a total of ${splashes.length+2} splashes`);
 splashes.push(`there is a ${(100/(splashes.length+1)).toFixed(2)}% chance of you getting this splash. consider yourself lucky! or not, i dont know.`);
@@ -162,7 +170,8 @@ function textwsh(x, y, color, text, styler, shadoOffset) {
   ctx.fillText(text, x, y);
 }
 
-function writeint(x, y, text, style, spacing, shadoOffset, sinmulti, speed, obt, time, colorstyle, color1, ncolor) {           // colors should be written as h,s,b except for ncolor
+function writeint(x, y, text, style, spacing, shadoOffset, sinmulti, speed, obt, time, colorstyle, color1, ncolor) {
+  // colors should be written as h,s,b except for ncolor
   let splittext = text.split('');
   let tempx = 0;
   let tempy = 0;
