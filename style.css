@@ -74,13 +74,12 @@ small {
 .imgcontainer {
   margin: 0;
   display: inline-grid;
-  width: 32%;
   border: 1px solid #ffffff33;
   text-align: center;
 }
 
 .imgcontainer img {
-  width: 100%;
+  width: 300px;
   height: auto;
 }
 
