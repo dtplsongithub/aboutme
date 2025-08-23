@@ -12,16 +12,17 @@ let t = 0;
 // MENUING
 let buttons = document.getElementById("navbar").childNodes;
 for (let i in buttons) {
-  if (buttons[i].nodeName=="BUTTON" && buttons[i].id != "back") buttons[i].addEventListener("click", () => {
+  if (buttons[i].nodeName=="BUTTON" && buttons[i].id != "back") buttons[i].addEventListener("click", () => { // navbar button events
     for (let j in buttons) {
-      if (buttons[j].nodeName=="BUTTON") buttons[j].classList.add("inactive");
+      if (buttons[j].nodeName=="BUTTON") buttons[j].classList.add("inactive"); // make other buttons inactive
     }
-    buttons[i].classList.remove("inactive");
-    // buttons[i].classList.add("active");
-    document.getElementById("back").classList.remove("inactive");
+    buttons[i].classList.remove("inactive"); // make self button active
+    // buttons[i].classList.add("active"); // not neccesary
+    document.getElementById("back").classList.remove("inactive"); // make the back button appear
     //document.getElementById("back").classList.add("active");
-    document.getElementById("-1m").style.display = "none";
-    for (let j in document.getElementsByClassName("main")[0].childNodes) {
+    document.getElementById("-1m").style.display = "none"; // hide -1
+    document.getElementById("canv").style.display = "none"; // hide -1
+    for (let j in document.getElementsByClassName("main")[0].childNodes) { // do the thing !
       if (document.getElementsByClassName("main")[0].childNodes[j].nodeName == "DIV") {
         if (document.getElementsByClassName("main")[0].childNodes[j].id == buttons[i].id+"m") {
           document.getElementsByClassName("main")[0].childNodes[j].style.display = "block";
@@ -39,18 +40,21 @@ document.getElementById("back").addEventListener("click", () => {
   }
   //document.getElementById("back").classList.remove("active");
   document.getElementById("back").classList.add("inactive");
-  document.getElementById("-1m").style.display = "block";
+  document.getElementById("canv").style.display = "block";
   for (let j in document.getElementsByClassName("main")[0].childNodes) {
     if (document.getElementsByClassName("main")[0].childNodes[j].nodeName == "DIV") {
       document.getElementsByClassName("main")[0].childNodes[j].style.display = "none";
     }
   }
+  document.getElementById("-1m").style.display = "block";
 });
-for (let j in document.getElementsByClassName("main")[0].childNodes) {
+
+for (let j in document.getElementsByClassName("main")[0].childNodes) { // hide everything
   if (document.getElementsByClassName("main")[0].childNodes[j].nodeName == "DIV") {
+    if (document.getElementsByClassName("main")[0].childNodes[j].id == "-1m") continue;
     document.getElementsByClassName("main")[0].childNodes[j].style.display = "none";
   }
-} // hide everything
+}
 let splashes = [
   "this is a splash",
   "real!!",
@@ -100,7 +104,7 @@ let splashes = [
   "the quick brown fox jumps over the lazy dog",
   "MS Gothic is the best font, change my mind.",
   "SHUT UP \"DUBMOOD - YOU CAN DO IT (BUT NOT LIKE WE DO IT)\" IS PLAYING",
-  "THIS TUNE IS FUCKING",
+  "THIS TUNE IS!!!!!!!",
   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
   "pma pma pma pma tou pma pma tei pma pma pma pma tou pma tee toww pam t'r'r'r pma pma tou pma pma tei tch papa tch pe pe tch papa pa pepepepe pepe pe",
   "324342342342343243tegergergwerherhherhehhtrknhttrnrtlnrgnlrenlrenglnrnlglnergnlernlneveflvdmvfnmv,nvmnvmvfge",
@@ -110,7 +114,8 @@ let splashes = [
   "coming soon to stores near hungary",
   "i may be able to",
   "i mayn't be able to",
-  "nibbles"
+  "nibbles",
+  "заткнись 🔇☝️🤫🤐 курица 🐔😂😂"
 ];
 splashes.push(`there are currently a total of ${splashes.length+2} splashes`);
 splashes.push(`there is a ${(100/(splashes.length+1)).toFixed(2)}% chance of you getting this splash. consider yourself lucky! or not, i dont know.`);
