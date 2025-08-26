@@ -2,204 +2,255 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>about me</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <link rel="icon" type="image/x-icon" href="./logo.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>about me</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="./logo.ico">
 </head>
 
 <body>
-  <div class="wrapper">
-  <div class="navbar" id="navbar">
-    <button id="0">about me</button>
-    <button id="1">my stuff</button>
-    <button id="2">my friends</button>
-    <button id="3">about this site</button>
-    <button class="inactive" id="back">← back</button>
-  </div>
-  <div class="main">
-    <h1 id="e">if you see this, please refresh. the page didnt load properly.</h1>
-    <canvas id="canv"></canvas>
-    <div class ="container" id="-1m">
-      <h2>Updates on website:</h2>
-      <h4>23 August 2025</h4>
-      Added news!<br>
-      And also stuff I made in previous years!
-      
-    <!--<hr><button>Use Website Font</button> (in case you don't have the MS Gothic font installed)-->
-    </div>
-    <div class="container" id="0m">
-      <h3>information about me</h3>
-      I'm from romania <br>
-      <h4>what i usually do:</h4>
-      to code random stuff in processing and sometimes in javascript<br>
-      playing geometry dash<br>
-      making music with <a href="https://tildearrow.org/furnace/">furnace</a> and sometimes <a href="https://16-bits.org/ft2.php">fasttracker 2</a> (tho its mostly just covers)<br>
-      <h4>i also like:</h4>
-      <a href="https://www.youtube.com/@Dubmood_Music">dubmood</a>'s music, and also <a href="https://www.youtube.com/@zabutom">zabutom</a>, and everyone in razor1911 is absolutely goated, a third of my playlist is just them
-      <h3>check out my other stuff:</h3>
-      <b>Youtube:</b> <a href="https://www.youtube.com/channel/UC1x2U0cglfIeX1nWRsNVrVA">d (@dtplsd)</a><br>
-      <b>Geometry Dash:</b> @dd6, @jrejory <small>(alt account)</small> <br>
-      <b>bonk.io:</b> dtpls2d <small>(inactive)</small><br> 
-      <b>Github:</b> <a href="https://github.com/dtplsongithub">dtplsongithub</a> <br>
-      <b>hitbox.io:</b> dd6hdd  <small>(inactive)</small><br> 
-      <b>Newgrounds:</b> <a href="https://dtpls.newgrounds.com/">dtpls</a><br>
-      <b>Scratch:</b> <a href="https://scratch.mit.edu/users/dateplays/">dateplays</a><br>
-      <b>Roblox:</b> <a href="https://www.roblox.com/users/4723806611/profile">dd6 (@DtplaysrThesecond)</a><small>(inactive)</small><br> 
-    </div>
-    <div class="container" id="3m">
-      <h3>about this site</h3>
-      <b>Site launch:</b>january 3 2022 :)<br>
-      <br>
-      <b>My site over the years:</b><br>
-      <div class="imgcontainer">
-        <a href="./assets/timeline/mywebsite2021.png"><img src="./assets/timeline/mywebsite2021.png" alt="image failed to load"></a>
-        <b>june 2021</b>
-      </div>
-      <div class="imgcontainer">
-        <a href="./assets/timeline/mywebsite2021july.png"><img src="./assets/timeline/mywebsite2021july.png" alt="image failed to load"></a>
-        <b>july 2021</b>
-      </div>
-      <div class="imgcontainer"><a href="./assets/timeline/mywebsite2022.png"><img src="./assets/timeline/mywebsite2022.png" alt="image failed to load"></a><b>2022</b></div>
-      <div class="imgcontainer"><a href="./assets/timeline/mywebsite2023aug.png"><img src="./assets/timeline/mywebsite2023aug.png" alt="image failed to load"></a><b>aug 2023</b></div>
-      <div class="imgcontainer"><a href="./assets/timeline/mywebsite2023.png"><img src="./assets/timeline/mywebsite2023.png" alt="image failed to load"></a><b>oct 2023</b></div>
-      <div class="imgcontainer"><a href="./assets/timeline/mywebsite2024.png"><img src="./assets/timeline/mywebsite2024.png" alt="image failed to load"></a><b>may 2024</b></div>
-    </div>
-    <div class="container" id="1m">
+	<div class="wrapper">
+		<div class="navbar" id="navbar">
+			<button id="0">about me</button>
+			<button id="1">my stuff</button>
+			<button id="2">my friends</button>
+			<button id="3">about this site</button>
+			<button class="inactive" id="back">← back</button>
+		</div>
+		<div class="main">
+			<h1 id="e">if you see this, please refresh. the page didnt load properly.</h1>
+			<canvas id="canv"></canvas>
+			<div class="container" id="-1m">
+				<h2>Updates:</h2>
+				<div class="controls"><button id="first">&lt;&lt;</button><button id="prev">&lt;</button><button
+						id="next">&gt;</button><button id="last">&gt;&gt;</button></div>
+				<br>
+				<span id="news"></span>
+				<hr><button id="usewebfont">Use Website Font</button> (in case you don't have the MS Gothic font
+				installed)
+			</div>
 
-      <h3>What I'm working now:</h3>
-      random tests in Processing<br><br>
+			<div class="container" id="0m">
+				<h3>information about me</h3>
+				I'm from romania <br>
+				<h4>what i usually do:</h4>
+				to code random stuff in processing and sometimes in javascript<br>
+				playing geometry dash<br>
+				making music with <a href="https://tildearrow.org/furnace/">furnace</a> and sometimes <a
+					href="https://16-bits.org/ft2.php">fasttracker 2</a> (tho its mostly just covers)<br>
+				<h4>i also like:</h4>
+				<a href="https://www.youtube.com/@Dubmood_Music">dubmood</a>'s music, and also <a
+					href="https://www.youtube.com/@zabutom">zabutom</a>, and everyone in razor1911 is absolutely goated,
+				a third of my playlist is just them
+				<h3>check out my other stuff:</h3>
+				<b>Youtube:</b> <a href="https://www.youtube.com/channel/UC1x2U0cglfIeX1nWRsNVrVA">d (@dtplsd)</a><br>
+				<b>Geometry Dash:</b> @dd6, @jrejory <small>(alt account)</small> <br>
+				<b>bonk.io:</b> dtpls2d <small>(inactive)</small><br>
+				<b>Github:</b> <a href="https://github.com/dtplsongithub">dtplsongithub</a> <br>
+				<b>hitbox.io:</b> dd6hdd <small>(inactive)</small><br>
+				<b>Newgrounds:</b> <a href="https://dtpls.newgrounds.com/">dtpls</a><br>
+				<b>Scratch:</b> <a href="https://scratch.mit.edu/users/dateplays/">dateplays</a><br>
+				<b>Roblox:</b> <a href="https://www.roblox.com/users/4723806611/profile">dd6
+					(@DtplaysrThesecond)</a><small>(inactive)</small><br>
+			</div>
 
-      <h3>Other things I made: (newest first, going all the way back to 2022)</h3>
+			<div class="container" id="1m">
 
-      <h4>Basalt4Processing</h4>
-      I also made a basalt for Processing
-      <details>
-        <summary>here's a screenshot</summary>
-        <p>
-          <a href="./assets/basalt.png"><img src="./assets/basalt.png" alt="image failed to load" width="300px" height="auto"></a>
-        </p>
-      </details>
+				<h3>What I'm working now:</h3>
+				random tests in Processing<br><br>
 
-      <h4>Basalt</h4>
-      Basalt is a text engine I made in Scratch in about 2 days (link <a href="https://scratch.mit.edu/projects/1207285357/">here</a>)
-      <details>
-        <summary>here's a demo of it</summary>
-        <video controls width="300px">
-          <source src="./assets/Basalt Text Engine v1.3 DEMO.mp4">
-        </video>
-      </details>
+				<h3>Other things I made: (newest first, going all the way back to 2022)</h3>
 
-      <h4>(myself)</h4>
-      (myself) is a series of animations i made, its season 2 of (me) (link <a href="https://www.youtube.com/playlist?list=PLZVPx5Obm4zvjFd7cMF9DvCs49iCuf229">here</a> and extras <a href="https://www.youtube.com/playlist?list=PLZVPx5Obm4zuLTC-nEoN7G_jSKj1SrMRm">here</a>)
-      <details>
-        <summary>you can find all of the episodes here</summary>
-        <p>
-          <a href="https://scratch.mit.edu/projects/1194113920/">ep.01</a> <br>
-          <a href="https://scratch.mit.edu/projects/1194773851/">ep.02</a> <br>
-          <a href="https://scratch.mit.edu/projects/1196236528/">ep.03</a> <br>
-          ep.04 - 5% done <br>
-          ep.05 - planned <br>
-          ep.06 <br>
-          ep.07 <br>
-          ep.08 - planned <br>
-          ep.09 - planned <br>
-          ep.10 - planned <br>
-          ...
-        </p>
-      </details>
-      I'll probably upload them to youtube soon.
+				<h4>Basalt4Processing</h4>
+				I also made a basalt for Processing
+				<details>
+					<summary>here's a screenshot</summary>
+					<p>
+						<a href="./assets/basalt.png"><img src="./assets/basalt.png" alt="image failed to load"
+								width="300px" height="auto"></a>
+					</p>
+				</details>
 
-      <h4>maze game</h4>
-      no public betas are available, and the game is cancelled because I could not get the collision to work. I just looked at the code after like 5 months, and I dont know how to fix it<br>
-      <b>update 22 august 2025:</b> I got it to work. only somewhat, you can still clip into the walls, but I suppose thats easily fixable
-      <details>
-        <summary>here are some screenshots <span class="clickable">they're clickable!!!</span></summary>
-        <p>
-          <a href="./assets/mazeSS/img1.png"><img src="./assets/mazeSS/img1.png" alt="image failed to load" width="300px" height="auto"></a>
-          <a href="./assets/mazeSS/img2.png"><img src="./assets/mazeSS/img2.png" alt="image failed to load" width="300px" height="auto"></a>
-          <a href="./assets/mazeSS/img3.png"><img src="./assets/mazeSS/img3.png" alt="image failed to load" width="300px" height="auto"></a>
-          <a href="./assets/mazeSS/img4.png"><img src="./assets/mazeSS/img4.png" alt="image failed to load" width="300px" height="auto"></a>
-          <a href="./assets/mazeSS/img5.png"><img src="./assets/mazeSS/img5.png" alt="image failed to load" width="300px" height="auto"></a>
-        </p>
-      </details>
+				<h4>Basalt</h4>
+				Basalt is a text engine I made in Scratch in about 2 days (link <a
+					href="https://scratch.mit.edu/projects/1207285357/">here</a>)
+				<details>
+					<summary>here's a demo of it</summary>
+					<video controls width="300px">
+						<source src="./assets/Basalt Text Engine v1.3 DEMO.mp4">
+					</video>
+				</details>
 
-      <h3>stuff I made in 2024</h3>
+				<h4>(myself)</h4>
+				(myself) is a series of animations i made, its season 2 of (me) (link <a
+					href="https://www.youtube.com/playlist?list=PLZVPx5Obm4zvjFd7cMF9DvCs49iCuf229">here</a> and extras
+				<a href="https://www.youtube.com/playlist?list=PLZVPx5Obm4zuLTC-nEoN7G_jSKj1SrMRm">here</a>)
+				<details>
+					<summary>you can find all of the episodes here</summary>
+					<p>
+						<a href="https://scratch.mit.edu/projects/1194113920/">ep.01</a> <br>
+						<a href="https://scratch.mit.edu/projects/1194773851/">ep.02</a> <br>
+						<a href="https://scratch.mit.edu/projects/1196236528/">ep.03</a> <br>
+						ep.04 - 5% done <br>
+						ep.05 - planned <br>
+						ep.06 <br>
+						ep.07 <br>
+						ep.08 - planned <br>
+						ep.09 - planned <br>
+						ep.10 - planned <br>
+						...
+					</p>
+				</details>
+				I'll probably upload them to youtube soon.
 
-      <h4>highqualitygame</h4>
-      the sequel to lowqualitygame! made by ponali, and me
-      link <a href="https://dtplsongithub.github.io/highqualitygame/">here</a><br>
+				<h4>maze game</h4>
+				no public betas are available, and the game is cancelled because I could not get the collision to work.
+				I just looked at the code after like 5 months, and I dont know how to fix it<br>
+				<b>update 22 august 2025:</b> I got it to work. only somewhat, you can still clip into the walls, but I
+				suppose thats easily fixable
+				<details>
+					<summary>here are some screenshots <span class="clickable">they're clickable!!!</span></summary>
+					<p>
+						<a href="./assets/mazeSS/img1.png"><img src="./assets/mazeSS/img1.png"
+								alt="image failed to load" width="300px" height="auto"></a>
+						<a href="./assets/mazeSS/img2.png"><img src="./assets/mazeSS/img2.png"
+								alt="image failed to load" width="300px" height="auto"></a>
+						<a href="./assets/mazeSS/img3.png"><img src="./assets/mazeSS/img3.png"
+								alt="image failed to load" width="300px" height="auto"></a>
+						<a href="./assets/mazeSS/img4.png"><img src="./assets/mazeSS/img4.png"
+								alt="image failed to load" width="300px" height="auto"></a>
+						<a href="./assets/mazeSS/img5.png"><img src="./assets/mazeSS/img5.png"
+								alt="image failed to load" width="300px" height="auto"></a>
+					</p>
+				</details>
 
-      <h4>PLACEHOLDERNAME</h4>
-      link to download <a href="https://dtplsongithub.github.io/plnamesite/">here</a>, I abandoned the game a long time ago, so dont play it<br>
-      
-      <h4>ARDUINO STUFF</h4>
-      thanks to my friend maybe_cube (or hexahedron1)<br>
-      i made <a href="https://wokwi.com/projects/380495646492040193">this project :D</a><br><br>
+				<h3>stuff I made in 2024</h3>
 
-      <details>
-        <summary>stuff I made in 2023 (also includes stuff from 2022, but updated)</summary>
-        <p>
-          <h4>lowqualitygame</h4>
-          my first ever game coded in javascript!!!!<br>
-          the code is very messy... <br>
-          link <a href="https://dtplsongithub.github.io/lowqualitygame/">here</a> (game was fixed in 22 aug 2025)<br>
+				<h4>highqualitygame</h4>
+				the sequel to lowqualitygame! made by ponali, and me
+				link <a href="https://dtplsongithub.github.io/highqualitygame/">here</a><br>
 
-          <h4>radixsort</h4>
-          only sorts instantly (link <a href="https://radixsort.dateplays.repl.co">here</a>)<br>
+				<h4>PLACEHOLDERNAME</h4>
+				link to download <a href="https://dtplsongithub.github.io/plnamesite/">here</a>, I abandoned the game a
+				long time ago, so dont play it<br>
 
-          <h4>HEXEc 0.11</h4>
-          hexec *was* hacked. <br>
-          there is a backup named hexec-rel made by ponali (link <a href="https://hexec-rel.ponali.repl.co/#">here</a>) but it also got hacked.<br>hexec was hacked by idk who, but whoever did it managed to create 32k files. there were so many files replit couldnt handle that and decided to die. <em>oof</em><br>
-          i did eventually manage to recover it <b>mostly</b> (link <a href="https://hexec-2.dateplays.repl.co/#">here</a>)<br>
-          <br><h4>what is hexec tho?</h4>
-          hexec is a fake os made in july 19. hacked in december 2021. recovered in early 2022.
-          <br><br><br>
-          note: in september of 2023 i modified what hexec was again, but it's not important, since all i did was shorten the text by adding some "bla bla blas".
-        </p>
-      </details>
-      <details>
-        <summary>stuff I made in 2022 (please note that most of the links in this part are dead.)</summary>
-        <p>
-          On scratch: a lot, not gonna say them all. <br>
-          repl.it: datebot, my main page(duc html), hexec(hacked oof), wbesit Google translated by coder() and translated by me ;) and i guess thats it.<br>
-          <h4>datebot (.d) v1.1</h4>
-          its a bot i made with nicejs and ponali (and some other ppl). its meant for rmtrollbox(link <a href="https://rmtrollbox.eu-gb.mybluemix.net/">here</a>).
-          <h4>old main page</h4>
-          dont even ask its just text no css
-          <h4>HEXEc 0.99</h4>
-          sadly, hexec its hacked. (link <a href="https://hexec.dateplays.repl.co/#">here</a>)<br>
-          there is a backup named hexec-rel made by ponali (link <a href="https://hexec-rel.ponali.repl.co/#">here</a>) but it also got hacked.<br>when i meant hacked i meant EVERY image is the WHEN THE IMPOSTER IS SUS meme image. <em>oof</em><br>
-          hexec is a fake os made in july 19. hacked in december 2021.
-          <h4>wbesit google translated / website</h4>
-          basically wbesit by coder() (link <a href="https://codersquack.ml/">here</a>) and google translated by me (link <a href="https://website.dateplays.repl.co">here</a>)
-        </p>
-      </details>
+				<h4>ARDUINO STUFF</h4>
+				thanks to my friend maybe_cube (or hexahedron1)<br>
+				i made <a href="https://wokwi.com/projects/380495646492040193">this project :D</a><br><br>
 
-      <br>
-      <br>
-      <a href="https://dtplsongithub.github.io/stuff/index.html">you can also find other stuff I made here</a>
-      <br><br>
-    </div>
-    <div class="container" id="2m">
-      <h3>Some of my friends</h3>
-        Nam (<a href="https://github.com/NalmTheNam">github</a>, <a href="https://www.youtube.com/@nyokosatouhsatouh4298">youtube</a>)<br>
-        slinx (<a href="https://www.youtube.com/@slinx92new">youtube</a>, <a href="http://slinx92.ix.tc/">website</a>, <a href="https://github.com/slinx92">github</a>)<br>
-        cube (<a href="https://www.youtube.com/@hexahedron1">youtube</a>, <a href="https://hexahedron1.github.io/">website</a>, aka hexahedron)<br>
-        LaF (<a href="https://www.youtube.com/@LaF.">youtube</a>)<br>
-        fluxdrive (<a href="https://github.com/mikethe223">github</a>, <a href="https://fluxdrive.bandcamp.com/">bandcamp</a>) <br>
-        Ponali (<a href="https://ponali.github.io/">website</a>, <a href="https://www.youtube.com/channel/UCZqWxqwHVnlqI2bAWxYH-cg">youtube</a>, <a href="https://github.com/ponali">github</a>)<br>
-        Poituser (<a href="https://www.youtube.com/@_Poit">youtube</a>)<br>
-      </ol>
-    </div>
-  </div>
-  <footer>
-    last updated 2025 aug 23<br>
-    <a href="https://dtplsongithub.github.io/">go back to main page</a><br>
-  </footer>
-  </div>
-  <script src="script.js"></script>
+				<details>
+					<summary>stuff I made in 2023 (also includes stuff from 2022, but updated)</summary>
+					<p>
+					<h4>lowqualitygame</h4>
+					my first ever game coded in javascript!!!!<br>
+					the code is very messy... <br>
+					link <a href="https://dtplsongithub.github.io/lowqualitygame/">here</a> (game was fixed in 22 aug
+					2025)<br>
+
+					<h4>radixsort</h4>
+					only sorts instantly (link <a href="https://radixsort.dateplays.repl.co">here</a>)<br>
+
+					<h4>HEXEc 0.11</h4>
+					hexec *was* hacked. <br>
+					there is a backup named hexec-rel made by ponali (link <a
+						href="https://hexec-rel.ponali.repl.co/#">here</a>) but it also got hacked.<br>hexec was hacked
+					by idk who, but whoever did it managed to create 32k files. there were so many files replit couldnt
+					handle that and decided to die. <em>oof</em><br>
+					i did eventually manage to recover it <b>mostly</b> (link <a
+						href="https://hexec-2.dateplays.repl.co/#">here</a>)<br>
+					<br>
+					<h4>what is hexec tho?</h4>
+					hexec is a fake os made in july 19. hacked in december 2021. recovered in early 2022.
+					<br><br><br>
+					note: in september of 2023 i modified what hexec was again, but it's not important, since all i did
+					was shorten the text by adding some "bla bla blas".
+					</p>
+				</details>
+				<details>
+					<summary>stuff I made in 2022 (please note that most of the links in this part are dead.)</summary>
+					<p>
+						On scratch: a lot, not gonna say them all. <br>
+						repl.it: datebot, my main page(duc html), hexec(hacked oof), wbesit Google translated by coder()
+						and translated by me ;) and i guess thats it.<br>
+					<h4>datebot (.d) v1.1</h4>
+					its a bot i made with nicejs and ponali (and some other ppl). its meant for rmtrollbox(link <a
+						href="https://rmtrollbox.eu-gb.mybluemix.net/">here</a>).
+					<h4>old main page</h4>
+					dont even ask its just text no css
+					<h4>HEXEc 0.99</h4>
+					sadly, hexec its hacked. (link <a href="https://hexec.dateplays.repl.co/#">here</a>)<br>
+					there is a backup named hexec-rel made by ponali (link <a
+						href="https://hexec-rel.ponali.repl.co/#">here</a>) but it also got hacked.<br>when i meant
+					hacked i meant EVERY image is the WHEN THE IMPOSTER IS SUS meme image. <em>oof</em><br>
+					hexec is a fake os made in july 19. hacked in december 2021.
+					<h4>wbesit google translated / website</h4>
+					basically wbesit by coder() (link <a href="https://codersquack.ml/">here</a>) and google translated
+					by me (link <a href="https://website.dateplays.repl.co">here</a>)
+					</p>
+				</details>
+
+				<br>
+				<br>
+				<a href="https://dtplsongithub.github.io/stuff/index.html">you can also find other stuff I made here</a>
+				<br><br>
+			</div>
+
+			<div class="container" id="2m">
+				<h3>Some of my friends</h3>
+				Nam (<a href="https://github.com/NalmTheNam">github</a>, <a
+					href="https://www.youtube.com/@nyokosatouhsatouh4298">youtube</a>)<br>
+				slinx (<a href="https://www.youtube.com/@slinx92new">youtube</a>, <a
+					href="http://slinx92.ix.tc/">website</a>, <a href="https://github.com/slinx92">github</a>)<br>
+				cube (<a href="https://www.youtube.com/@hexahedron1">youtube</a>, <a
+					href="https://hexahedron1.github.io/">website</a>, aka hexahedron)<br>
+				LaF (<a href="https://www.youtube.com/@LaF.">youtube</a>)<br>
+				fluxdrive (<a href="https://github.com/mikethe223">github</a>, <a
+					href="https://fluxdrive.bandcamp.com/">bandcamp</a>) <br>
+				Ponali (<a href="https://ponali.github.io/">website</a>, <a
+					href="https://www.youtube.com/channel/UCZqWxqwHVnlqI2bAWxYH-cg">youtube</a>, <a
+					href="https://github.com/ponali">github</a>)<br>
+				Poituser (<a href="https://www.youtube.com/@_Poit">youtube</a>)<br>
+				</ol>
+			</div>
+
+			<div class="container" id="3m">
+				<h3>about this site</h3>
+				<b>Site launch:</b>january 3 2022 :)<br>
+				<br>
+				<b>My site over the years:</b><br>
+				<div class="imgcontainer">
+					<a href="./assets/timeline/mywebsite2021.png"><img src="./assets/timeline/mywebsite2021.png"
+							alt="image failed to load"></a>
+					<b>june 2021</b>
+				</div>
+				<div class="imgcontainer">
+					<a href="./assets/timeline/mywebsite2021july.png"><img src="./assets/timeline/mywebsite2021july.png"
+							alt="image failed to load"></a>
+					<b>july 2021</b>
+				</div>
+				<div class="imgcontainer"><a href="./assets/timeline/mywebsite2022.png"><img
+							src="./assets/timeline/mywebsite2022.png" alt="image failed to load"></a><b>2022</b></div>
+				<div class="imgcontainer"><a href="./assets/timeline/mywebsite2023aug.png"><img
+							src="./assets/timeline/mywebsite2023aug.png" alt="image failed to load"></a><b>aug 2023</b>
+				</div>
+				<div class="imgcontainer"><a href="./assets/timeline/mywebsite2023.png"><img
+							src="./assets/timeline/mywebsite2023.png" alt="image failed to load"></a><b>oct 2023</b>
+				</div>
+				<div class="imgcontainer"><a href="./assets/timeline/mywebsite2024.png"><img
+							src="./assets/timeline/mywebsite2024.png" alt="image failed to load"></a><b>may 2024</b>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			last updated 2025 aug 26<br>
+			<a href="https://dtplsongithub.github.io/">go back to main page</a><br>
+		</footer>
+	</div>
+	<script src="./script.js"></script>
+	<script src="./menus.js"></script>
+	<script src="./news.js"></script>
 </body>
 
 </html>
