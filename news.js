@@ -1,4 +1,7 @@
 let siteNews = [
+	`<h4>26 August 2025 (again)</h4>
+	Fixed most links (i say most because i could not find RMTROLLBOX anymore)
+	I plan on adding news from wayy before I added news. It's possible because of github commit and also replit history.`,
 	`<h4>26 August 2025</h4>
 	Fixed "Expected color but found 'null'"<br>
 	You can now use the website font if you don't already have MS Gothic font (<a href="./assets/fonts/msgothic-01-preview.png">preview</a>) installed<br>

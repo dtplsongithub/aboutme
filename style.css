@@ -206,6 +206,14 @@ details summary:hover {
   border-right: 4px solid #ddd !important;
 }
 
+.dead {
+  text-decoration:line-through;
+  color: #aaa;
+}
+.note {
+  border: 1px solid #aaa;
+}
+
 @keyframes lightglow {
   0% {box-shadow: 0px 0px 15px #ffffff}
   50% {box-shadow: 0px 0px 20px #ffffff}
