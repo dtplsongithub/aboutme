@@ -1,4 +1,6 @@
 let siteNews = [
+	`<h4>2025 September 6</h4>
+	(myself) ep.04 :)`,
 	`<h4>2025 August 27</h4>
 	added the news from previous years	`,
 	`<h4>2025 August 26 (again)</h4>
