@@ -58,7 +58,7 @@ let splashes = [
 	"the quick brown fox jumps over the lazy dog",
 	"MS Gothic is the best font, change my mind.",
 	"SHUT UP \"DUBMOOD - YOU CAN DO IT (BUT NOT LIKE WE DO IT)\" IS PLAYING",
-	"THIS TUNE IS!!!!!!!",
+	// ah shit just remove the splash
 	"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
 	"pma pma pma pma tou pma pma tei pma pma pma pma tou pma tee toww pam t'r'r'r pma pma tou pma pma tei tch papa tch pe pe tch papa pa pepepepe pepe pe",
 	"324342342342343243tegergergwerherhherhehhtrknhttrnrtlnrgnlrenlrenglnrnlglnergnlernlneveflvdmvfnmv,nvmnvmvfge",
@@ -73,7 +73,27 @@ let splashes = [
 	"Oh My God It's Loading Sources",
 	"Hold On Don't Leave It's Loading Sources",
 	"Wait",
-	"Oh My God Loacl Storage Dorks"
+	"Oh My God Loacl Storage Dorks",
+	"GUIVO 2: The Return Of Xethalon",
+	"this part is the best part because it has the most part",
+	"my pronouns are C-3 G-3 C-4/B-3 G-3",
+	"The level is video",
+	"EVERYONE HAS NO NAME HAIR",
+	"Endian",
+	"kubé",
+	"Also try Minecraft!",
+	"Also try Minec...wait this ain't terraria",
+	"suere ydah",
+	"ă",
+	"why did bro sign ouo ngis orb did yhw",
+	"Wadduyu meen i knoWAA",
+	"debian residence",
+	"HELLO MARI TWO",
+	"Fizzing",
+	"WHAT ARE-",
+	"if you saw a splash about 2025 please disregard it, focus on the present! 2026! (cant wait for this to become dated too)",
+	"make a song wr newgroundsupload% world record (65 min)",
+	"TOO MANY HORSES"
 ];
 splashes.push(`there are currently a total of ${splashes.length + 3} splashes`);
 splashes.push(`there is a ${(100 / (splashes.length + 2)).toFixed(2)}% chance of you getting this splash. consider yourself lucky! or not, i dont know.`);

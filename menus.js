@@ -9,7 +9,6 @@ for (let i in buttons) {
 		// buttons[i].classList.add("active"); // not neccesary
 		document.getElementById("back").classList.remove("inactive"); // make the back button appear
 		//document.getElementById("back").classList.add("active");
-		document.getElementById("-1m").style.display = "none"; // hide -1
 		document.getElementById("canv").style.display = "none"; // hide -1
 		for (let j in document.getElementsByClassName("main")[0].childNodes) { // do the thing !
 			if (document.getElementsByClassName("main")[0].childNodes[j].nodeName == "DIV") {
@@ -35,12 +34,10 @@ document.getElementById("back").addEventListener("click", () => {
 			document.getElementsByClassName("main")[0].childNodes[j].style.display = "none";
 		}
 	}
-	document.getElementById("-1m").style.display = "block";
 });
 
 for (let j in document.getElementsByClassName("main")[0].childNodes) { // hide everything
 	if (document.getElementsByClassName("main")[0].childNodes[j].nodeName == "DIV") {
-		if (document.getElementsByClassName("main")[0].childNodes[j].id == "-1m") continue;
 		document.getElementsByClassName("main")[0].childNodes[j].style.display = "none";
 	}
 }
