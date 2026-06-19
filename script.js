@@ -17,16 +17,15 @@ let splashes = [
 	"there are currently a total of ${splash.length+1} splashes",
 	"click here to win absolutely nothing",
 	"http response status code 102 is a processing reference",
-	"also try hexahedron1's website!",
+	"also try hexahedron1's website!", //wait does it still exist
 	"also try slinx92's website!",
 	"also try ponali's website!",
-	"fun fact: this was inspired by gdplayer's website",
+	"fun fact: this was inspired by gdplayer's website", // < < <<<true !! !!!!!!!
 	"I REMBER",
 	"hey do you guys have any good splashes",
 	"splish splash splosh",
 	"no",
 	"⚠️ Expected color but found 'null'.",
-	"da pot să vorbesc și română, evident",
 	"i cost a hydrant",
 	"do try this at home!",
 	"get out",
@@ -53,7 +52,7 @@ let splashes = [
 	"d",
 	"did you get the empty splash yet?",
 	"lol im on the left                                                                 ",
-	"                                                                 lol im on the right",
+	"                                                                lol im on the right",
 	"lol i am centered",
 	"the quick brown fox jumps over the lazy dog",
 	"MS Gothic is the best font, change my mind.",
@@ -73,11 +72,48 @@ let splashes = [
 	"Oh My God It's Loading Sources",
 	"Hold On Don't Leave It's Loading Sources",
 	"Wait",
-	"Oh My God Loacl Storage Dorks"
+	"Oh My God Loacl Storage Dorks",
+	"listen to my music",
+	"listen to slinx92's music",
+	"listen to fluxdrive's music",
+	"Right here, right now.",
+	"Who the hell still calls me dateplays in the big 2026 bruv",
+	"you might see some outdated memes here, im too lazy to remove them",
+	"yes!",
+	"also try fluxdrive's website!",
+	"This is not a splash. You have been lied to. Wake up.",
+	"you know how i said i have been playing a lot of cookie clicker recently? that was a lie, but i still have the game.",
+	"you should play tangerine tycoon by gaz",
+	"IS THAT A GEOMETRY DASH REFERENCE !?!!??!?!?!?!?!?!?!?!?!?!?!?!?!?!!!??!?!?!?!?!?!??!!!?!?",
+	"stop looking at this website, go play some flash games instead",
+	"stop looking at this website, go play some mario kart wii instead",
+	"stop looking at this website, go play some red remover blast instead",
+	"stop looking at this website, go play some geometry dash instead",
+	"stop looking at this website, go play some lowqualitygame instead",
+	"stop looking at this website, go play some highqualitygame instead",
+	"stop looking at this website, go play some CrapSPEED 2002 instead",
+	"stop looking at this website, go play some tetr.io instead",
+	"stop looking at this website, go play some Mitos.is The Game instead",
+	"stop looking at this website, go play some Portal instead",
+	"stop looking at this website, go play some Portal 2 instead",
+	"stop looking at this website, go play some Wii Sports instead",
+	"stop looking at this website, go play some Minecraft instead",
+	"stop looking at this website, go play some -Game from my Steam Library- instead",
+	"stop looking at this website, go outside and touch some grass.",
+	"stop looking at this website, go play some uhh//..i forgor",
+	"you might see some outdated memes here, see that's because they dont actually exist, and you are hallucinating",
+	"you might see some outdated memes here, see that's because t",
+	"you might see some outdated memes here, no you dont!!! STOP!!!!",
+	"Hello my name is Markiplier and I am a fish",
+	"hi person",
+	"whar???",
+	"I, am Steve.",
+	"you really dont have anything better to do huh..?",
+	"no one can stop me from just adding more splashes!!! Hahaha!!!!"
 ];
 splashes.push(`there are currently a total of ${splashes.length + 3} splashes`);
-splashes.push(`there is a ${(100 / (splashes.length + 2)).toFixed(2)}% chance of you getting this splash. consider yourself lucky! or not, i dont know.`);
-splashes.push(`there is a ${(100 / (splashes.length + 1) / (splashes.length + 1)).toFixed(4)}% chance of you getting any splash twice in a row. if you did, consider yourself EXTRA lucky!`);
+splashes.push(`there is a ${(100 / (splashes.length + 2)).toFixed(3)}% chance of you getting this splash. consider yourself lucky! or not, i dont know.`);
+splashes.push(`there is a ${(100 / (splashes.length + 1) / (splashes.length + 1)).toFixed(5)}% chance of you getting any splash twice in a row. if you did, consider yourself EXTRA lucky!`);
 let randomSplash = splashes[Math.floor(Math.random() * (splashes.length))];
 
 var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
@@ -119,7 +155,8 @@ function update() {
 
 	renderText(wc, 25, "about me", "28px MS Gothic", 17, 0, 2, 7, 0.07, t, "n", [20, 90, 100], "#000");
 	renderText(wc + Math.sin(t / 2 + 120) * 30, hc - 50, "hi there!", "48px MS Gothic", 26, 12, 6, 7, 0.07, t, "h", [0, 50, 75], "#000");
-	renderText(wc + Math.sin(t / 3) * 15, hc, "im d. also known as dtpls or dateplays.", "32px MS Gothic", 21, 6, 4, 7, 0.07, t, "s", [Math.sin(t * 15) * 15 + 240, 60, 0], null, 99);
+	renderText(wc + Math.sin(t / 3) * 15, hc, "im d. also known as dtpls or dd6.", "32px MS Gothic", 21, 6, 4, 7, 0.07, t, "s", [Math.sin(t * 15) * 15 + 240, 60, 0], null, 99); 
+	// Who the hell still calls me dateplays in the big 2026 bruv
 	renderText(wc + Math.sin(t) * 25, hc + 50, "welcome to my about me page", "32px MS Gothic", 21, 6, 4, 7, 0.07, t, "h", [0, 60, 75]);
 	renderText(wc, c.height - 20, randomSplash, "16px MS Gothic", 12, 0, 2, 4, 0.1, t, "n", null, "#000");
 

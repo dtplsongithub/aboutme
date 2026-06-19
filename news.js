@@ -1,4 +1,7 @@
 let siteNews = [
+	`<h4>2026 June 19</h4>
+	i forgot to update the website in a while sorry guyse<br>
+	i released som music on my website check my stuff`,
 	`<h4>2025 September 23</h4>
 	whoopsss!! i forgot to update the website in a long time, it happens sometimes, oh well<br>
 	i added (myself) ep.05 and i have other stuff planned, <br>
