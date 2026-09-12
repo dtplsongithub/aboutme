@@ -1,6 +1,6 @@
 let siteNews = [
 	`<h4>2026 August 26</h4>
-	idk man i updated my stuff`
+	idk man i updated my stuff`,
 	`<h4>2026 June 19</h4>
 	i forgot to update the website in a while sorry guyse<br>
 	i released som music on my website check my stuff`,
